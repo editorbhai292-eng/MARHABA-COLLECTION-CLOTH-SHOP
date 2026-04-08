@@ -1,18 +1,22 @@
-/**
- * FIREBASE CONFIGURATION GUIDE
- * 
- * 1. Go to Firebase Console > Project Settings
- * 2. Scroll down to "Your apps" > "SDK setup and configuration"
- * 3. Select "Config" and copy the object values here.
- */
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-export const firebaseConfig = {
-  apiKey: "AIzaSyAboSNnQqq9gvkyseu6vDXNxLpd2G41WEQ",
-  authDomain: "gen-lang-client-0173569643.firebaseapp.com",
-  projectId: "gen-lang-client-0173569643",
-  storageBucket: "gen-lang-client-0173569643.firebasestorage.app",
-  messagingSenderId: "774624196859",
-  appId: "1:774624196859:web:e47cc56145425c6f6a185e",
-  firestoreDatabaseId: "ai-studio-42274bcd-d84f-438c-81b6-ff0855c04622"
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD5EB-4kPO-iqAGlEwzKWJRwAc5g1OCENo",
+  authDomain: "marhaba-collection-cloth-shop.firebaseapp.com",
+  projectId: "marhaba-collection-cloth-shop",
+  storageBucket: "marhaba-collection-cloth-shop.firebasestorage.app",
+  messagingSenderId: "599620508270",
+  appId: "1:599620508270:web:4f72cdfdd50509652e247f",
+  measurementId: "G-RYD8HVQEMJ"
 };
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+export { app, analytics, firebaseConfig };
