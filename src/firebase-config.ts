@@ -1,7 +1,11 @@
-{ initializeApp } from "firebase/app";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// 1. Naya Config yahan paste karein
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyD5EB-4kPO-iqAGlEwzKWJRwAc5g1OCENo",
   authDomain: "marhaba-collection-cloth-shop.firebaseapp.com",
@@ -12,9 +16,7 @@ const firebaseConfig = {
   measurementId: "G-RYD8HVQEMJ"
 };
 
-// 2. Initialize Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
-// 3. Ye
 export { app, analytics, firebaseConfig };
